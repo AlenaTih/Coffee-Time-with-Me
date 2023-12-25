@@ -13,29 +13,44 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     </head>
     <body>
-        <section class="intro">
-            <h1>Join me for a <strong>virtual coffee chat</strong></h1>
-            <span class="beta-text">Grab your favorite beverage and let's chat!</span>
-            <p class="top-text">Powered by the love for programming and networking</p>
-        </section>
-        
-        <main class="main-content">
-            <img class="img-main" src="images/avatar.png" alt="My avatar">
-            <h2>Coffee Time with.me</h2>
-            <span class="subheading">Connect, Code, and Have Fun!</span>
-            
-            <p>Let's discuss programming, share insights, and have a great time together.</p>
-            
-            <form>
-                <input id="input-name" type="text" placeholder="Name" aria-label="Name" required>
-                <input id="input-email" type="email" placeholder="Email" aria-label="Email" required>
-                <input id="input-date" type="date" placeholder="Your preferred day and time" aria-label="Date">
-                <button id="submit-button" class="btn btn-primary">Let's make virtual coffee memories!</button>
-                <!-- <button class="btn btn-primary">Grab a Virtual Coffee</button> -->
-            </form>   
-            <p class="fine-print">We'll never share your information without permission</p>
-            <!-- <p class="fine-print">Your information is safe with us.</p> -->
-        </main>
+        <div class="container">
+            <div class="product-content">
+                <section class="intro">
+                    <h1>Join me for a <strong>virtual coffee chat</strong></h1>
+                    <span class="beta-text">Grab your favorite beverage and let's chat!</span>
+                    <p class="top-text">Powered by the love for programming and networking</p>
+                </section>
+                
+                <main class="main-content">
+                    <img class="img-main" src="images/avatar.png" alt="My avatar">
+                    <h2>Coffee Time with.me</h2>
+                    <span class="subheading">Connect, Code, and Have Fun!</span>
+                    
+                    <p>Let's discuss programming, share insights, and have a great time together.</p>
+                    
+                    <form>
+                        <input id="input-name" type="text" placeholder="Name" aria-label="Name" required>
+                        <input id="input-email" type="email" placeholder="Email" aria-label="Email" required>
+                        <input id="input-date" type="date" placeholder="Your preferred day and time" aria-label="Date">
+                        <textarea id="input-comment" placeholder="Your comment" aria-label="Your comment"></textarea>
+                        <button id="submit-button" class="btn btn-primary">Let's make virtual coffee memories!</button>
+                        <!-- <button class="btn btn-primary">Grab a Virtual Coffee</button> -->
+                    </form>   
+                    <p class="fine-print">We'll never share your information without permission</p>
+                    <!-- <p class="fine-print">Your information is safe with us.</p> -->
+                
+                    <div class="bottom">
+                        <h4>
+                            The background photo by
+                            talented creators on
+                            <a target="_blank" href="https://unsplash.com/">
+                            Unsplash</a>
+                        </h4>
+                    </div>
+                
+                </main>
+            </div>
+        </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>
