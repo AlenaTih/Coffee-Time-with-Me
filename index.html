@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Scrimbafy Me!</title>
+        <title>Coffee Time with Me!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
         <!-- CSS -->
@@ -12,25 +14,27 @@
     </head>
     <body>
         <section class="intro">
-            <h1>Turn <strong>your picture</strong> into an iconic <strong>Scrimba avatar</strong></h1>
-            <span class="beta-text">Currently in Beta</span>
-            <p class="top-text">Powered by Scrimba</p>
+            <h1>Join me for <strong>virtual coffee chats</strong></h1>
+            <span class="beta-text">Grab your favorite beverage and let's chat!</span>
+            <p class="top-text">Powered by the love for programming and networking</p>
         </section>
         
         <main class="main-content">
-            <img class="img-main" src="images/avatar.png" alt="My Scrimba avatar.">
-            <h2>Scrimbafy.me</h2>
-            <span class="subheading">Liven up your profile pic</span>
+            <img class="img-main" src="images/avatar.png" alt="My avatar">
+            <h2>Coffee Time with.me</h2>
+            <span class="subheading">Connect, Code, and Have Fun!</span>
             
-            <p>The colorful and iconic Scrimba avatars are no longer just for members of the Scrimba team and its Avengers-caliber group of code reviewers. You can Scrimbafy your photo today!</p>
+            <p>Let's discuss programming, share insights, and have a great time together.</p>
             
             <form>
-                <input type="text" required placeholder="Name" aria-label="Name">
-                <input type="email" required  placeholder="Email" aria-label="Email">
-                <input type="file" required accept="image/png, image/jpg" aria-label="Choose file">
-                <button class="btn btn-primary">Submit</button>
+                <input id="input-name" type="text" placeholder="Name" aria-label="Name" required>
+                <input id="input-email" type="email" placeholder="Email" aria-label="Email" required>
+                <input id="input-date" type="date" placeholder="Your preferred day and time" aria-label="Date">
+                <button id="submit-button" class="btn btn-primary">Let's make virtual coffee memories!</button>
+                <!-- <button class="btn btn-primary">Grab a Virtual Coffee</button> -->
             </form>   
             <p class="fine-print">We'll never share your information without permission</p>
+            <!-- <p class="fine-print">Your information is safe with us.</p> -->
         </main>
         <script src="index.js" type="module"></script>
     </body>
