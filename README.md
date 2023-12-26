@@ -23,6 +23,7 @@ Welcome to Coffee Time with Me! This project aims to bring people together for v
 - HTML
 - CSS
 - JavaScript
+- Firebase Realtime Database
 
 ## Contributors
 
