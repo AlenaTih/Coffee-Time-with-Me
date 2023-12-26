@@ -1,5 +1,33 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+import { getDatabase, ref, push, onValue, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+
+const firebaseConfig = {
+    apiKey: "AIzaSyChR30UHiZ4u-_t1mbqPfBTY0g57Smr_HA",
+    authDomain: "realtime-database-67683.firebaseapp.com",
+    databaseURL: "https://realtime-database-67683-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "realtime-database-67683",
+    storageBucket: "realtime-database-67683.appspot.com",
+    messagingSenderId: "372372469204",
+    appId: "1:372372469204:web:f348e41f2bb53d7aaa9241"
+  }
+
+  // Initialize Firebase
+const app = initializeApp(firebaseConfig)
+const database = getDatabase(app)
+const contactDatainDB = ref(database, "CoffeeTimeWitMeData")
+
 const submitButton = document.getElementById("submit-button")
-const inputName = document.getElementById("input-name")
+const inputNameEl = document.getElementById("input-name")
+const inputEmailEl = document.getElementById("input-email")
+const inputDateEl = document.getElementById("input-date")
+const inputCommentEl = document.getElementById("input-comment")
+
+let inputValue = {
+    name: "",
+    email: "",
+    date: "",
+    comment: ""
+}
 
 submitButton.addEventListener("click", function() {
     
@@ -11,6 +39,17 @@ submitButton.addEventListener("click", function() {
         alert("Please type in your name and email ❤️")
     } else {
         console.log("clicked")
-        alert(`Thank you, ${inputName.value} ❤️ I will contact you!`)
+        alert(`Thank you, ${inputNameEl.value} ❤️ I will contact you!`)
+
+    
+        // Update inputValue with input values
+        inputValue.name = inputNameEl.value
+        inputValue.email = inputEmailEl.value
+        inputValue.date = inputDateEl.value
+        inputValue.comment = inputCommentEl.value
+
+        // Push the contact data item to the database
+        push(contactDatainDB, inputValue)
+
     }
 })
