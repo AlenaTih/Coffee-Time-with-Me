@@ -19,13 +19,13 @@ const contactDatainDB = ref(database, "CoffeeTimeWitMeData")
 const submitButton = document.getElementById("submit-button")
 const inputNameEl = document.getElementById("input-name")
 const inputEmailEl = document.getElementById("input-email")
-const inputDateEl = document.getElementById("input-date")
+const inputDateTimeEl = document.getElementById("input-date-time")
 const inputCommentEl = document.getElementById("input-comment")
 
 let inputValue = {
     name: "",
     email: "",
-    date: "",
+    dateTime: "",
     comment: ""
 }
 
@@ -45,7 +45,7 @@ submitButton.addEventListener("click", function() {
         // Update inputValue with input values
         inputValue.name = inputNameEl.value
         inputValue.email = inputEmailEl.value
-        inputValue.date = inputDateEl.value
+        inputValue.dateTime = inputDateTimeEl.value
         inputValue.comment = inputCommentEl.value
 
         // Push the contact data item to the database
