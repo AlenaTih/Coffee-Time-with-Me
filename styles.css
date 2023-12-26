@@ -197,6 +197,18 @@ textarea {
 }
 
 /* =================
+    Links 
+   ================= */
+
+a {
+    color: #6989FA;
+}
+
+a:hover, a:active, a:visited {
+    color: #2E5CB5;
+}
+
+/* =================
     Media queries 
    ================= */
 
