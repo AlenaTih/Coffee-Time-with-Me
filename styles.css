@@ -15,7 +15,6 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: 400;
-    /* text-shadow: 0 2px #816fca; */
     text-shadow: 0 2px #593831;
 }
 
@@ -30,7 +29,8 @@ h2 {
 }
 
 .bottom h4 {
-    color: #593831;
+    /* color: #593831; */
+    /* color: #A65F46; */
     font-size: 0.75rem;
     font-weight: 400;
     text-align: center;
@@ -214,10 +214,6 @@ textarea {
 
 /* @media (width >= 576px)  */
 @media (min-width: 576px) {
-    /* body {
-        display: flex;
-    } */
-
     .container {
         display: flex;
     }
