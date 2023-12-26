@@ -176,6 +176,11 @@ textarea {
     resize: vertical;
 }
 
+label {
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+}
+
 .btn {
     text-transform: uppercase;
     font-weight: 600;
