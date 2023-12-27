@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyChR30UHiZ4u-_t1mbqPfBTY0g57Smr_HA",
@@ -38,7 +38,6 @@ submitButton.addEventListener("click", function() {
         // The form is valid when the name and email input fields are not empty
         alert("Please type in your name and email ❤️")
     } else {
-        console.log("clicked")
         alert(`Thank you, ${inputNameEl.value} ❤️ I will contact you!`)
 
     
